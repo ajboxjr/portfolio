@@ -33,6 +33,14 @@
         align-self: flex-start;
       }
 
+      .social-menu ul{
+      position: absolute;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      transform: translateX(50%);
+      right: 50%;
+  }
   @media screen and (min-width:1093px)  {
     .main {
       align-items: baseline;
@@ -56,6 +64,10 @@
   .main-image{
     align-self: flex-end;
 
+  }
+  .social-menu ul {
+    transform: none;
+    right: auto;
   }
  }
     svg{
@@ -135,12 +147,7 @@
     .main-about {
       flex: 1;
     }
-    .social-menu ul{
-    position: absolute;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+
 
 .social-menu ul li{
     list-style: none;
