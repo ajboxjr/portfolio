@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
     <title>Anthony Box</title>
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
   </head>
   <style media="screen">
     .main-header {
@@ -27,6 +28,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+      }
+      .social-menu {
+        align-self: flex-start;
       }
 
   @media screen and (min-width:1093px)  {
@@ -86,12 +90,13 @@
       width: 100%;
       margin: 0;
       padding: 0;
+      padding-top: 20px;
+
       display: flex;
       flex-direction: row;
       justify-content: center;
     }
     .hero  {
-      padding-top: 20px;
       top: 0;
       position: absolute;
       width: 100%;
@@ -130,6 +135,71 @@
     .main-about {
       flex: 1;
     }
+    .social-menu ul{
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+.social-menu ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+.social-menu ul li .fa:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px rgba(255,255,255,0.5);
+}
+
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #000;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #000;
+}
+
   </style>
   <body>
     <div class="hero">
@@ -158,6 +228,15 @@
               on my unicycle.</p>
         </div>
 
+
+      </div>
+        <div class="social-menu">
+          <ul>
+              <li><a href="https://www.instagram.com/ajboxjr/" title="Check out my Insta" target="blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/anthony-box-01a9bb44/" title="Check out my LinkedIn" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="mailto:anthony.box@morehouse.edu" title="Shoot me an email"><i class="fa fa-envelope-open-o" target="blank"></i></a></li>
+              <li><a href="./resume-anthony.pdf" title="Download Resume" download><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a></li>
+          </ul>
       </div>
     </div>
 
